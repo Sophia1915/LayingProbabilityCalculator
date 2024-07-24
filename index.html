@@ -47,7 +47,7 @@
             border-radius: 8px;
             font-size: 1em;
             box-sizing: border-box;
-            color: #004d40; /* Change text color to dark green */
+            color: #004d40; 
         }
         button {
             width: 100%;
@@ -93,14 +93,15 @@
         <label for="chanceLay">Probability of a Single Tank Laying</label>
         <select id="chanceLay" onchange="updateChanceLayValue()">
             <option value="0.75">Ideal (75%)</option>
-            <option value="0.45">Unideal (45%)</option>
+            <option value="0.45">Moderate (45%)</option>
+            <option value="0.20">Poor (20%)</option>
         </select>
         <button onclick="calculateTanks()">Calculate</button>
         <div class="result" id="result"></div>
     </div>
     <div class="full-width">
         <div class="disclaimer" id="disclaimer">
-            <!-- The note will be inserted by JavaScript -->
+            
         </div>
     </div>
 
